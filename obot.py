@@ -1,4 +1,4 @@
-import re
+import re, praw
 
 app_id = "-CW-pzNvWiIbXw"
 f = open('secrets.txt','r')
