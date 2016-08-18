@@ -6,11 +6,13 @@ r = obot.login()
 submission = r.get_submission(submission_id='4sxzn5')
 subreddit = r.get_subreddit('charredgrass')
 me = "CharredBot"
+mods_who_may_have_done_flair = [""]
 
 def parseComment(c):
     #if c isn't a comment object we have bigger problems
     for n in c.replies:
-        if (me == x.author):
+        if (me == str(n.author)):
+            print("RIP")
             return
     currflair = c.author_flair_text
     currflair_class = c.author_flair_text
